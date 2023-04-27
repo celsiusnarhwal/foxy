@@ -8,8 +8,10 @@ app = FastAPI()
 security = HTTPBasic()
 
 
-@app.get("/")
-def redirect(credentials: Annotated[HTTPBasicCredentials, Depends(security)]):
+@app.get("/{path:path}")
+def redirect(
+    credentials: Annotated[HTTPBasicCredentials, Depends(security)], path: str
+):
     return RedirectResponse(
-        f"https://dl.fontawesome.com/{credentials.password}/fontawesome-pro/python/simple"
+        f"https://dl.fontawesome.com/{credentials.password}/fontawesome-pro/python/simple/{path}"
     )
