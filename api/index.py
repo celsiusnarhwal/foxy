@@ -10,6 +10,4 @@ security = HTTPBasic()
 
 @app.get("/")
 def redirect(credentials: Annotated[HTTPBasicCredentials, Depends(security)]):
-    return RedirectResponse(
-        f"https://dl.fontawesome.com/{credentials.password}/fontawesome-pro/python/simple"
-    )
+    return "test"
