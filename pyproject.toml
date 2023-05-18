@@ -14,8 +14,9 @@ uvicorn = "^0.22.0"
 [tool.poetry.group.dev.dependencies]
 poethepoet = "^0.20.0"
 
-[tool.poe.tasks]
-dev = { shell = "poetry export -o api/requirements.txt && vercel dev" }
+[tool.poe.tasks.dev]
+shell = "poetry export -o api/requirements.txt && vercel dev"
+help = "Start a development server with Vercel."
 
 [build-system]
 requires = ["poetry-core"]
