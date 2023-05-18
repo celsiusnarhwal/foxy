@@ -1,8 +1,7 @@
 # Foxy
 
 Foxy is a proxy server that lets you access Font Awesome's private Python package index without exposing your Font
-Awesome
-package manager token in your project's source code.
+Awesome package manager token in your project's source code.
 
 ## Why?
 
