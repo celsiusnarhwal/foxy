@@ -162,6 +162,3 @@ cython_debug/
 
 # Vercel
 .vercel
-
-# Miscellaneous
-requirements.txt
