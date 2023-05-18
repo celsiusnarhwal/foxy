@@ -16,7 +16,7 @@ package index.
 
 ## Usage
 
-Using the faculties provided by your package manager, add `https://foxy.celsiusnarhwal.dev/simple` as a package index. For
+Using the faculties provided by your favorite Python package manager, add `https://foxy.celsiusnarhwal.dev/simple` as a package index. For
 credentials, the username can be whatever you want, and the password must be your Font Awesome package manager token.
 
 Here's an example using [Poetry](https://python-poetry.org/):
