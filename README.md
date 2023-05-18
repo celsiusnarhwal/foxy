@@ -40,7 +40,7 @@ Foxy never stores or logs your token; it uses it to form the index URL and then 
 my word for it because you can just [look at the source code](api/index.py). If you're _really_ paranoid, you can even deploy your own
 instance of Foxy by clicking the button below.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=github.com%2Fcelsiusnarhwal%2Ffoxy&project-name=foxy&repository-name=foxy)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcelsiusnarhwal%2Ffoxy)
 
 ## License
 
