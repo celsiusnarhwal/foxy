@@ -6,7 +6,7 @@ package manager token in your project's source code.
 
 ## Why?
 
-If you have Font Awesome Pro license, you can install Font Awesome Pro's Python package from the index at
+If you have a Font Awesome Pro license, you can install Font Awesome Pro's Python package from the index at
 `https://dl.fontawesome.com/{FONTAWESOME_TOKEN}/fontawesome-pro/python/simple`, where `{FONTAWESOME_TOKEN}` is your
 Font Awesome package manager token. Unfortunately, putting this URL in any file you'd want to check into source control
 — like a `requirements.txt` or a `pyproject.toml` — will make it difficult for you to make your source code publicly
