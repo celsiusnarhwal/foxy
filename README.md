@@ -37,7 +37,7 @@ poetry config http-basic.fontawesome celsiusnarhwal ${FONTAWESOME_TOKEN}
 ## Security
 
 Foxy never stores or logs your token; it uses it to form the index URL and then throws it away. You don't have to take
-my word for it because you can just look at the source code. If you're _really_ paranoid, you can even deploy your own
+my word for it because you can just [look at the source code](api/index.py). If you're _really_ paranoid, you can even deploy your own
 instance of Foxy by clicking the button below.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=github.com%2Fcelsiusnarhwal%2Ffoxy&project-name=foxy&repository-name=foxy)
