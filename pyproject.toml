@@ -1,14 +1,21 @@
 [tool.poetry]
-name = "fa-install"
-version = "0.1.0"
-description = ""
+name = "foxy"
+version = "1.0.0"
+description = "A proxy server for Font Awesome's private Python package index"
 authors = ["celsius narhwal <hello@celsiusnarhwal.dev>"]
 readme = "README.md"
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-fastapi = "^0.95.1"
-uvicorn = "^0.21.1"
+fastapi = "^0.95.2"
+uvicorn = "^0.22.0"
+
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.20.0"
+
+[tool.poe.tasks]
+dev = { shell = "poetry export -o api/requirements.txt && vercel dev" }
 
 [build-system]
 requires = ["poetry-core"]
