@@ -17,8 +17,23 @@ package index.
 
 ## Usage
 
-Using the faculties provided by your package manager, add `https://foxy.celsiusnarhwal.dev` as a package index. For
+Using the faculties provided by your package manager, add `https://foxy.celsiusnarhwal.dev/simple` as a package index. For
 credentials, the username can be whatever you want, and the password must be your Font Awesome package manager token.
+
+Here's an example using [Poetry](https://python-poetry.org/):
+
+```toml
+# pyproject.toml
+[[tool.poetry.source]]
+name = "fontawesome"
+url = "https://foxy.celsiusnarhwal.dev/simple"
+secondary = true
+
+```
+
+```bash
+poetry config http-basic.fontawesome celsiusnarhwal ${FONTAWESOME_TOKEN}
+```
 
 ## Security
 
