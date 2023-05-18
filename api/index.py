@@ -8,7 +8,12 @@ app = FastAPI()
 security = HTTPBasic()
 
 
-@app.get("/{path:path}")
+@app.get("/")
+def index():
+    return RedirectResponse("https://github.com/celsiusnarhwal/foxy")
+
+
+@app.get("/simple/{path:path}")
 def redirect(
     credentials: Annotated[HTTPBasicCredentials, Depends(security)], path: str
 ):
