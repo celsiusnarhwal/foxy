@@ -15,3 +15,11 @@ repos:
       - id: prettier
         additional_dependencies:
           - prettier-plugin-toml
+
+  - repo: https://github.com/python-poetry/poetry
+    rev: 1.4.2
+    hooks:
+      - id: poetry-check
+      - id: poetry-lock
+      - id: poetry-export
+        args: [-o, api/requirements.txt]
