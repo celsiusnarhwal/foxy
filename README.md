@@ -1,6 +1,7 @@
 # Foxy
 
-Foxy is a proxy server that lets you access Font Awesome's private Python package index without exposing your Font Awesome
+Foxy is a proxy server that lets you access Font Awesome's private Python package index without exposing your Font
+Awesome
 package manager token in your project's source code.
 
 ## Why?
@@ -16,13 +17,13 @@ package index.
 
 ## Usage
 
-Use the faculties provided by your package manager, add `https://foxy.celsiusnarhwal.dev` as a package index. For
+Using the faculties provided by your package manager, add `https://foxy.celsiusnarhwal.dev` as a package index. For
 credentials, the username can be whatever you want, and the password must be your Font Awesome package manager token.
 
 ## Security
 
 Foxy never stores or logs your token; it uses it to form the index URL and then throws it away. You don't have to take
-my word for it because you can just look at the source code. And if you're _really_ paranoid, you can deploy your own
+my word for it because you can just look at the source code. If you're _really_ paranoid, you can even deploy your own
 instance of Foxy by clicking the button below.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=github.com%2Fcelsiusnarhwal%2Ffoxy&project-name=foxy&repository-name=foxy)
