@@ -14,7 +14,7 @@ def index():
 
 
 @app.get("/simple/{path:path}")
-def redirect(
+def repository(
     credentials: Annotated[HTTPBasicCredentials, Depends(security)], path: str
 ):
     return RedirectResponse(
